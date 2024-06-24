@@ -3,6 +3,7 @@ package cycles;
 public class ArrayTest {
     public static void main(String[] args) {
         cycleTest();
+        System.out.println("Метод отработал");
     }
 
     static void cycleTest() {
@@ -12,6 +13,7 @@ public class ArrayTest {
             }
             System.out.println(i);
         }
+        System.out.println("Цикл отработал");
     }
 }
 
