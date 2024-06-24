@@ -9,7 +9,7 @@ public class ArrayTest {
     static void cycleTest() {
         for (int i = 0; i <= 8; i++) {
             if (i == 3) {
-                continue;
+                break;
             }
             System.out.println(i);
         }
