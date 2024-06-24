@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         int i = 348;
         print("Число: " + i + " четное " + isEven(i));
+        printDefault();
     }
 
     static boolean isEven(int i) {
@@ -13,6 +14,10 @@ public class Main {
 
     static void print(String str) {
         System.out.println(str);
+    }
+
+    static void printDefault() {
+        System.out.println("Привет, изучаем методы");
     }
 
 }
