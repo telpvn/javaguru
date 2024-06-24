@@ -11,20 +11,13 @@ public class ArrayTest {
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(20);
         }
-
         System.out.println(Arrays.toString(array));
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] += 100;
-        }
-        System.out.println(Arrays.toString(array));
-
+        int max = 0;
         for (int element : array) {
-            System.out.print(element % 100 + " ");
+            if (max < element)
+                max = element;
         }
-        System.out.println();
-
-//        Arrays.sort(array);
-//        System.out.println(Arrays.toString(array));
+            System.out.println(max);
     }
 }
