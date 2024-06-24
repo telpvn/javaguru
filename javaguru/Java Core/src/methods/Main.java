@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         int j = 3;
-        boolean result = isEven(j);
+        boolean result = isEven(348);
         System.out.println(result);
     }
 
