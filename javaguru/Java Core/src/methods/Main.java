@@ -3,14 +3,11 @@ package methods;
 public class Main {
 
     public static void main(String[] args) {
-        int j = 3;
-        boolean result = isEven(348);
-        System.out.println(result);
+        System.out.println(isEven(348));
     }
 
     static boolean isEven(int i) {
-        boolean isEven = (i % 2) == 0;
-        return isEven;
+        return (i % 2) == 0;
     }
 
 }
