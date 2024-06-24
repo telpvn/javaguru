@@ -13,5 +13,10 @@ public class ArrayTest {
         }
 
         System.out.println(Arrays.toString(array));
+
+        for (int i = 0; i < array.length; i++){
+            array[i] += 100;
+        }
+        System.out.println(Arrays.toString(array));
     }
 }
