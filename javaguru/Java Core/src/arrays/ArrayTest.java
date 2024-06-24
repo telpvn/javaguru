@@ -9,7 +9,7 @@ public class ArrayTest {
         int[] array = new int[10];
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt();
+            array[i] = random.nextInt(20);
         }
 
         System.out.println(Arrays.toString(array));
