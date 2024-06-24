@@ -18,5 +18,8 @@ public class ArrayTest {
             array[i] += 100;
         }
         System.out.println(Arrays.toString(array));
+
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
     }
 }
