@@ -1,10 +1,16 @@
 package conditional_statements;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        int dayNumber = 77;
+        System.out.println("Введите число недели: \n");
+
+        Scanner scanner = new Scanner(System.in);
+
+        int dayNumber = scanner.nextInt();
 
         switch (dayNumber) {
             case 1:
