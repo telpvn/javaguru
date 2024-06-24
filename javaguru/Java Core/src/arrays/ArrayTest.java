@@ -18,6 +18,12 @@ public class ArrayTest {
             if (max < element)
                 max = element;
         }
-            System.out.println(max);
+        System.out.println(max);
+
+        int sum = 0;
+        for (int element : array) {
+            sum += element;
+        }
+        System.out.println(sum);
     }
 }
