@@ -6,7 +6,7 @@ public class ArrayTest {
     }
 
     static void cycleTest() {
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 8; i += 3) {
             System.out.println(i);
         }
     }
