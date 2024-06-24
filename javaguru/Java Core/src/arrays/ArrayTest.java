@@ -14,12 +14,17 @@ public class ArrayTest {
 
         System.out.println(Arrays.toString(array));
 
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] += 100;
         }
         System.out.println(Arrays.toString(array));
 
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        for (int element : array) {
+            System.out.print(element % 100 + " ");
+        }
+        System.out.println();
+
+//        Arrays.sort(array);
+//        System.out.println(Arrays.toString(array));
     }
 }
