@@ -5,6 +5,14 @@ public class Car {
     int volume;
     int fuelLevel;
 
+    Car(String model) {
+        this.model = model;
+        color = "Белый";
+        fuelConsumtion = 8;
+        volume = 45;
+        fuelLevel = 10;
+    }
+
     void move(int x1, int y1, int x2, int y2) {
         double path = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         fuelLevel = (int) (fuelLevel - path / 100 * fuelConsumtion);
@@ -27,21 +35,12 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car opel = new Car();
-        opel.model = "Opel";
+        Car opel = new Car("Opel");
         opel.color = "Желтый";
-        opel.volume = 45;
-        opel.fuelLevel = 15;
-        opel.fuelConsumtion = 8;
-
         opel.move(10, 10, 100, 100);
 
-        Car bmw = new Car();
-        bmw.model = "BMW";
-        bmw.color = "Черный";
+        Car bmw = new Car("BMW");
         bmw.volume = 60;
-        bmw.fuelLevel = 60;
-        bmw.fuelConsumtion = 12;
 
         bmw.move(0, 0, 500, 300);
         bmw.refuel(50);
