@@ -10,8 +10,19 @@ public class Car {
         fuelLevel = (int) (fuelLevel - path / 100 * fuelConsumtion);
         if (fuelLevel < 0) {
             System.out.println("Автомобиль " + model + " не доехал, пора заправиться!");
+            fuelLevel = 0;
         } else {
             System.out.println("Автомобиль " + model + " прошел: 0" + path + " км. осталось топлива: " + fuelLevel + " литра");
+        }
+    }
+
+    void refuel(int liters) {
+        fuelLevel += liters;
+        if (fuelLevel > volume) {
+            System.out.println("Бензин льется через край!");
+            fuelLevel = volume;
+        } else {
+            System.out.println("Заправились, теперь у нас " + fuelLevel + " литров");
         }
     }
 
@@ -33,5 +44,7 @@ public class Car {
         bmw.fuelConsumtion = 12;
 
         bmw.move(0, 0, 500, 300);
+        bmw.refuel(50);
+        bmw.move(150, 150, 500, 300);
     }
 }
