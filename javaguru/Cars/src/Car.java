@@ -5,12 +5,33 @@ public class Car {
     int volume;
     int fuelLevel;
 
+    Car() {
+        color = "Белый";
+        fuelConsumtion = 8;
+        volume = 45;
+        fuelLevel = 10;
+    }
+
     Car(String model) {
         this.model = model;
         color = "Белый";
         fuelConsumtion = 8;
         volume = 45;
         fuelLevel = 10;
+    }
+
+    Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+        fuelConsumtion = 18;
+    }
+
+    public Car(String model, String color, double fuelConsumtion, int volume, int fuelLevel) {
+        this.model = model;
+        this.color = color;
+        this.fuelConsumtion = fuelConsumtion;
+        this.volume = volume;
+        this.fuelLevel = fuelLevel;
     }
 
     void move(int x1, int y1, int x2, int y2) {
@@ -39,7 +60,7 @@ public class Car {
         opel.color = "Желтый";
         opel.move(10, 10, 100, 100);
 
-        Car bmw = new Car("BMW");
+        Car bmw = new Car("BMW", "Черный");
         bmw.volume = 60;
 
         bmw.move(0, 0, 500, 300);
