@@ -56,12 +56,7 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car opel = new Car("Opel");
-        Car bmw = new Car("BMW", "Черный");
-        opel.color = "Синий";
-
-        System.out.println(opel.color);
-        System.out.println(bmw.color);
+        Car.color = "Белый";
         System.out.println(Car.color);
     }
 }
